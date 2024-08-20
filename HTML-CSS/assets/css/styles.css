@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+body{
+    background-color: rgb(233, 109, 7) !important;
+    background-image: url(../images/background-adare-restaurant.jpg);
+    background-size: cover;
+}
+
+/*Este es como el padre, luego le agregamos el bloque queremos afectar*/
+
+/*--Container--*/ 
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+    /*--Header--*/
+.container > header{
+    text-align: center;
+    height:20vh;  /*permite que el contenido no se mueva cuando aumenta el menu*/
+}
+
+/*--img logo--*/
+.container .header .img-container{
+    height:20vh;
+}
+
+.container .header .img-container .img-logo{
+    height: 12vh;
+}
+
+/*--Navbar--*/
+.container .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width:90vw;
+    margin: 0 auto;
+}
+
+.container .header .navbar .nav-item{
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+    transition: 0.3s;
+
+}
+
+.container .header .navbar .nav-item:hover{
+    color: rgba(224, 95, 9, 0.781);
+    font-size: 1.6em;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/*Main Container*/
+.container .main-container{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.container .main-container .main-text-container{
+    color: white;
+    /*padding-top: 10vh;*/
+    padding: 4rem;
+}
+
+.container .main-container .main-text-container h1{
+    font-family: "Playwrite",sans-serif;
+    font-size: 2em;
+    transition:0.3s;
+}
+
+.container .main-container .main-text-container h1:hover{
+    text-shadow: 0.05em 0.05em rgba(221, 92, 5, 0.877);
+    transition:0.3s;
+}
+
+.container .main-container .main-text-container article{
+    margin:0 auto;
+    width: 35vw;
+}
+
+.container .main-container .main-text-container p{
+    color: rgba(157, 152, 156);
+    font-family: "Monserrat", sans-serif;
+    font-size: 0.9em;
+}
+
+.container .main-container .main-text-container p strong a{
+    text-decoration: none;    
+    color: white;
+    text-shadow: 0.08em 0.08em #c24e20;
+}
+
+/*Map Google*/
+
+.container .main-container .map-container .google-map{
+    height: 40vw;
+    width: 50vh;
+}
+.container .footer{
+    color: white;
+    text-align: center;
+}
+
+.container .footer h4{
+    font-size: 1.1em;
+}
+
+/*MEDIA QUERY PARA MAXIMO Y MINIMO DE PANTALLA*/
+/* Media querys Estilo responsive para tablets*/
+
+@media  (mmin-width:768px) and (max-width:992px) {
+    .container .header .navbar{
+        width: 50vw;
+    }
+}
+
+/*Media para celulares*/
+@media  (mmin-width:530px) and (max-widht: 750px){
+    .container .header .navbar{
+        width: 75vw;
+    }
+}
+
+@media  (mmin-width:310px) and (max-widht: 529px){
+    .container .header{
+        margin-left: 9vw;
+    }
+
+    .container .header .img-container{
+        margin-left: 21vw;
+    }
+
+    .container .header .navbar{
+        /*margin-left: 0.3vw;*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100vw;
+        gap: 1.1rem;
+    }
+    .container .main-container{
+        width: 100vw;
+    }
+
+    .container .main-container .main-text-container{
+        width: 100vw;
+    }
+
+    .container .main-container .main-text-container article{
+        width: 60vw;
+    }
+
+    .container .main-container .map-container{
+        margin-left: 11vw;
+    }
+
+    .container .main-container .map-container .google-map{
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .container .footer h4{
+        width: 100vw;
+        margin-left: auto;
+    }
+    .container .footer h4{
+        font-size: 1em;
+
+    }
+}
+

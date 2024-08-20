@@ -1,0 +1,95 @@
+
+body{
+    background-color: hsla(17, 95%, 14%, 0.822) !important;
+    color: #ffffff !important;
+}
+
+/*Manejo de la imagen*/
+.img-container{
+    display:flex;
+    justify-content:center;
+    align-items:last center;
+}
+.img-container img{
+    padding: 1rem;
+    width: 40vw;
+    height: 13vw;
+    clip-path: inset(1% 1% 1% 1% round 11%);
+    
+}
+
+/*Manejo del Titulo*/
+.header h1{
+    text-align: center;
+}
+
+.main-content h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Maneja responsive*/
+@media (min-width: 768px) {
+     .tiempos{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap:10rem;
+        text-align: center;
+        
+     }
+}
+
+/*Transforma a columnas si cambia el tamaño de la pagina*/
+.tiempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Manejo de iconos*/
+.tiempo .iconos{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.tiempo h4{
+    color: rgb(230, 119, 16);
+    font-size:x-large;
+}
+.tiempos p{
+    font-size:larger;
+    color: black;
+}
+
+.main-content h3{
+    text-align: left;
+    color: rgb(230, 119, 16);
+}
+
+.main-content .ingredientes{
+    display: grid;
+    justify-content: left;    
+}
+.main-content .instrucciones{
+    display: grid;
+    justify-content: left;    
+}
+.main-content .nutricion{
+    display: grid;
+    justify-content: left;    
+}
+
+
+/*Maneja el pie de pagina*/
+.body .footer p{
+    text-align: center;
+    font-size: larger;
+    color: black;
+    padding:10%;
+}
