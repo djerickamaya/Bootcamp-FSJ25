@@ -1,0 +1,136 @@
+
+
+/*Inicia Header*/
+
+.container .header .navbar .logo img{
+    max-width: 120rem;
+}
+
+body{
+    background-color:whitesmoke;
+}    
+    .header .navbar .menu-navbar{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        list-style: none;
+        background-color: rgb(199, 32, 32);
+    }
+
+    .header .navbar .menu-navbar .nav-item{
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1em;
+        transition: 0.3s;
+    }
+    .header .navbar .menu-navbar .nav-item:hover{
+        color: rgba(67, 49, 224, 0.842);
+        font-size: 1.1em;
+        text-decoration: underline;
+        transition: 0.4s;
+    }
+/*Finaliza Header*/
+
+
+
+
+
+
+/*Inicia Media Query*/
+body{
+    background-color: yellow;
+}
+
+
+/*Media Query Celular*/
+@media (min-width: 480px ){
+    body{
+        background-color: rgb(143, 10, 10);
+    }
+    .header .navbar .menu-navbar{
+    flex-direction:column-reverse;
+    }
+
+    .baner h1{
+        color: rgb(12, 12, 12);
+        text-align: center;
+        font-size:50px;
+        transition: 0.3s;
+    }
+
+    .baner h1:hover{
+        color: rgb(4, 83, 8);
+        font-size:60px;
+        transition: 0.3s;
+    }
+
+    .promo1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.1rem;
+        align-content: center;
+    }
+
+  
+
+}
+
+
+
+/*Media Query Tablet*/
+@media (min-width: 768px ) {
+    body{
+        background-color:whitesmoke;
+}
+.header .navbar .menu-navbar{
+    flex-direction: row;    
+}  
+.baner h1{
+    color: brown;
+    text-align: center;
+    font-size:50px;
+    transition: 0.3s;
+}
+
+.baner h1:hover{
+    color: rgb(4, 83, 8);
+    font-size:60px;
+    transition: 0.3s;
+}
+
+.promo1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    margin-top: 5rem;
+    text-align: center;}
+.promo2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.promo3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+}
+
+
+
+
+/*Media Query Laptop o PC */
+@media (min-width: 1140px) {
+     
+}
+
+/*Media Query TV */
+@media (min-width: 1400px) {
+     
+}
+
